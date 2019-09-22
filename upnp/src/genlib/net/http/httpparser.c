@@ -72,7 +72,7 @@ static str_int_entry Http_Method_Table[NUM_HTTP_METHODS] = {
 	{"PUT", HTTPMETHOD_PUT}
 };
 
-#define NUM_HTTP_HEADER_NAMES 33
+#define NUM_HTTP_HEADER_NAMES 36
 str_int_entry Http_Header_Names[NUM_HTTP_HEADER_NAMES] = {
 	{"ACCEPT", HDR_ACCEPT},
 	{"ACCEPT-CHARSET", HDR_ACCEPT_CHARSET},
@@ -89,7 +89,9 @@ str_int_entry Http_Header_Names[NUM_HTTP_HEADER_NAMES] = {
 	{"CONTENT-TYPE", HDR_CONTENT_TYPE},
 	{"DATE", HDR_DATE},
 	{"EXT", HDR_EXT},
+	{"GROUPINFO.SMARTSPEAKER.AUDIO", HDR_SONOS_GROUP_INFO},
 	{"HOST", HDR_HOST},
+	{"HOUSEHOLD.SMARTSPEAKER.AUDIO", HDR_SONOS_HOUSEHOLD_INFO},
 	{"IF-RANGE", HDR_IF_RANGE},
 	{"LOCATION", HDR_LOCATION},
 	{"MAN", HDR_MAN},
@@ -107,6 +109,7 @@ str_int_entry Http_Header_Names[NUM_HTTP_HEADER_NAMES] = {
 	{"TRANSFER-ENCODING", HDR_TRANSFER_ENCODING},
 	{"USER-AGENT", HDR_USER_AGENT},
 	{"USN", HDR_USN},
+	{"WEBSOCK.SMARTSPEAKER.AUDIO", HDR_SONOS_WEBSOCKET},
 };
 
 /***********************************************************************/

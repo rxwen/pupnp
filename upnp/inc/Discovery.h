@@ -28,6 +28,9 @@
 	EXPAND_CLASS_MEMBER_STRING(CLASS, Date) \
 	EXPAND_CLASS_MEMBER_STRING(CLASS, Ext) \
 	EXPAND_CLASS_MEMBER_BUFFER(CLASS, DestAddr, struct sockaddr_storage) \
+	EXPAND_CLASS_MEMBER_STRING(CLASS, SonosHouseHoldInfo) \
+	EXPAND_CLASS_MEMBER_STRING(CLASS, SonosGroupInfo) \
+	EXPAND_CLASS_MEMBER_STRING(CLASS, SonosWebsocket) \
 
 #include "TemplateInclude.h"
 

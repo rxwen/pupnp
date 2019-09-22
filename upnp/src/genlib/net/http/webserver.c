@@ -132,7 +132,7 @@ static const char *gMediaTypes[] = {
 
 /* general */
 #define NUM_MEDIA_TYPES       70
-#define NUM_HTTP_HEADER_NAMES 33
+#define NUM_HTTP_HEADER_NAMES 36
 
 #define ASCTIME_R_BUFFER_SIZE 26
 #ifdef _WIN32

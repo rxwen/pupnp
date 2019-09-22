@@ -164,6 +164,19 @@ void ssdp_handle_ctrlpt_msg(
 		UpnpDiscovery_strncpy_Os(param, hdr_value.buf,
 					 hdr_value.length);
 	}
+	/* LOCATION */
+	if (httpmsg_find_hdr(hmsg, HDR_SONOS_HOUSEHOLD_INFO, &hdr_value) != NULL) {
+		UpnpDiscovery_strncpy_SonosHouseHoldInfo(param, hdr_value.buf,
+					       hdr_value.length);
+	}
+	if (httpmsg_find_hdr(hmsg, HDR_SONOS_GROUP_INFO, &hdr_value) != NULL) {
+		UpnpDiscovery_strncpy_SonosGroupInfo(param, hdr_value.buf,
+					       hdr_value.length);
+	}
+	if (httpmsg_find_hdr(hmsg, HDR_SONOS_WEBSOCKET, &hdr_value) != NULL) {
+		UpnpDiscovery_strncpy_SonosWebsocket(param, hdr_value.buf,
+					       hdr_value.length);
+	}
 	/* clear everything */
 	event.UDN[0] = '\0';
 	event.DeviceType[0] = '\0';

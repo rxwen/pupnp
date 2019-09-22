@@ -147,6 +147,10 @@ typedef enum
 #define HDR_RANGE			35
 #define HDR_TE				36
 
+#define HDR_SONOS_HOUSEHOLD_INFO 		137
+#define HDR_SONOS_GROUP_INFO			138
+#define HDR_SONOS_WEBSOCKET   			139
+
 /*! status of parsing */
 typedef enum {
 	/*! msg was parsed successfully. */
