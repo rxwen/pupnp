@@ -71,5 +71,29 @@ LOCAL_MODULE := libupnp
 LOCAL_MODULE_TAGS := eng
 LOCAL_CFLAGS := -DHAVE_CONFIG_H -DNDEBUG -DIXML_HAVE_SCRIPTSUPPORT
 
-include $(BUILD_SHARED_LIBRARY)
+include $(BUILD_STATIC_LIBRARY)
 
+#include $(CLEAR_VARS)
+
+#LOCAL_SRC_FILES := \
+	#upnp/sample/linux/tv_combo_main.c \
+	#upnp/sample/common/tv_device.c \
+	#upnp/sample/common/tv_ctrlpt.c \
+	#upnp/sample/common/sample_util.c
+
+#LOCAL_MODULE := tv_device
+#LOCAL_MODULE_TAGS := eng
+
+#LOCAL_C_INCLUDES := \
+	#${LOCAL_PATH}/ixml/src/inc \
+	#${LOCAL_PATH}/ixml/inc \
+	#${LOCAL_PATH}/upnp/src/inc \
+	#${LOCAL_PATH}/upnp/src/threadutil \
+	#${LOCAL_PATH}/upnp/inc \
+	#${LOCAL_PATH}/upnp/sample/common
+
+#LOCAL_CFLAGS :=
+## LOCAL_SYSTEM_SHARED_LIBRARIES := libc
+#LOCAL_STATIC_LIBRARIES := libupnp
+
+#include $(BUILD_EXECUTABLE)
